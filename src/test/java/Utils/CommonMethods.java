@@ -89,6 +89,7 @@ public class CommonMethods extends PageInitializer {
     public static Select clickOnDropDown(WebElement element) {
         Select select = new Select(element);
         return select;
+        //
     }
 
     public static void selectByValue(WebElement element, String value) {
