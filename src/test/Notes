@@ -1,0 +1,132 @@
+-When u put dryRun = true;  this won't run your test cases but only write the features for you.
+so you have to change it to false.
+
+-"or" is used in case u want to run more than one test,
+ example : tags="@testcase1 or @testcase2")
+
+
+
+
+#Notes :
+
+    #HOOKS: For defining pre and Post steps in any Cucumber framework
+    #     : This is always created inside the StepDefinitions folder
+    #     : Hooks will take care of pre and post conditions irrespective
+    #     : of what goes in between the test steps
+
+
+// we cannot inherit hooks
+
+
+
+
+
+  #BACKGROUND: it is the clubbing of common steps in different scenarios of a feature file till the flow is broken
+  #1: Hard code
+  #2: Config file
+  #------------------Cucumber itself provides multiple options through which we can feed data from feature file into stepdefintion
+  #3: Regular Expressions :
+       # put the data in double quotes [""]
+  #4: Scenario Outline :
+       # Provides you an alternative to Data driven testing
+       # Also supports parametrization
+
+
+
+
+
+
+    #===================================PARAMETERIZATION================================
+  # Executing the same test case with multiple data
+
+
+
+
+
+  #=============================ScenarioOutline======================================#
+  #If you want to use parameterization
+  #If you wish to implement data driven testing
+    # Scenario Outline is always used along with the keyword 'Examples'
+
+
+
+
+
+
+   -target folder is mostly used for storing the test case execution reports generated using Cucumber
+
+
+   -Page Object Model : an object repository [ it stores or holds all the webElements specific to a particular page]
+
+   -Every 'Page Object' should inherit the 'CommonMEthods class'
+
+
+   -Scenario outline notes :
+   with scenario outline, if we have 3 different data 'username' + 'password', JAVA will open browser, enter credentials on, close
+   browser, then iterate 3 times.
+
+
+   -Data Table notes :
+   with Data Tables it will only run test 1 times with 3 different credentials for example and then close and this is not because
+   of Data Table structure but because of JAVA and the code written for it.
+
+
+
+
+-target folder is mostly used for storing the test case execution reports generated using Cucumber
+
+
+
+
+   - option + command + L     = Align the lines of code
+
+
+
+
+
+
+#
+- The 2 dependencies below are used to handle excel sheets an you will find them on this website :
+   *https://mvnrepository.com/artifact/org.apache.poi/poi/5.2.3
+   *https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/5.2.3
+
+
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+           <dependency>
+               <groupId>org.apache.poi</groupId>
+               <artifactId>poi</artifactId>
+               <version>5.2.3</version>
+           </dependency>
+
+           <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+           <dependency>
+               <groupId>org.apache.poi</groupId>
+               <artifactId>poi-ooxml</artifactId>
+               <version>5.2.3</version>
+           </dependency>#
+
+
+
+
+
+#
+- The dependency below is the one responsible for taking screenshots and will be found on this website :
+   *https://mvnrepository.com/artifact/commons-io/commons-io/2.11.0
+
+ <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>#
+
+
+
+
+
+
+#
+- The dependency below is for logs :
+    *https://mvnrepository.com/artifact/log4j/log4j
+
+
